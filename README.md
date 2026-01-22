@@ -66,5 +66,19 @@ README – ML for Quantum Experiment Simulation
         - The current work is focused on a single-qubit simulation; extending to multi-qubit systems would require additional modelling.
         - The three-class target labels are based on binning a continuous measurement, which is a design choice and may affect class balance and interpretability.
 
-6. Contact
-        For questions or clarification, please reach out via email or On Teams.
+Data source
+
+        The data used in this project is derived from the QDataSet, a collection of simulated
+        single- and two-qubit experiments designed for machine learning tasks. It provides
+        expectation values (Bloch sphere coordinates) and control pulse information for
+        10,000 single-qubit examples.
+
+QDataSet:
+        - E. Perrier et al., "QDataSet, quantum datasets for machine learning"
+        - GitHub repository: https://github.com/eperrier/QDataSet
+        - Article: https://www.nature.com/articles/s41597-022-01639-1
+
+In this project I work with a preprocessed subset of the single-qubit data
+(expectations and pulse features) saved as `expectations.csv` and `pulses.csv`.
+The original simulation setup and generation details are described in the paper.
+
